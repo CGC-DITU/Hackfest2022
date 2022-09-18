@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bill Generator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2&family=Bree+Serif&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" media="screen and (max-width:1050px)" href="phone.css">
+
+</head>
+
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="images/logo.png" alt="QuickMeal.com">
+        </div>
+
+        <ul>
+            <li class="item"><a href="#home">Home</a></li>
+            <li class="item"><a href="#serv">Generate Bill</a></li>
+            <li class="item"><a href="#store-section">Our Services</a></li>
+            <li class="item"><a href="#contact">Contact Us</a></li>  
+        </ul>
+    </nav>
+    <section id="home">
+        <h1 class="h-primary">Welcome to the Bill Generator Website</h1>
+        <p>This website helps in generating the bill according to the problem statement
+        </p>
+        <p>It uses DOM Manipulation to perform this task</p>
+    </section>
+
+    <section class="services-container" id="serv">
+        <h1 class="h-primary left">Generate Bill</h1>
+        <div id="services">
+            <form>
+                <label class="h-secondary">Enter Units of electricity </label><input type="text" id="generate" placeholder="in KWh"><br>
+            <button type="button" class="btn" onclick="generatebill()">Generate Bill</button>
+            <p id="answer" class="h-secondary"></p>
+        </div>
+    </section>
+
+    <section id="store-section">
+        <h1 class="h-primary center">Our Offices</h1>
+        <div id="stores">
+            
+            <div class="sto">
+                <img src="images/stores/dehli.jpg" alt="">
+            </div>
+            
+            <div class="sto">
+                <img src="images/stores/lucknow.jpg" alt="">
+            </div>
+            
+            <div class="sto">
+                <img src="images/stores/mumbai.jpg" alt="">
+            </div>
+            
+            <div class="sto">
+                <img src="images/stores/surat.jpg" alt="">
+            </div>
+
+        </div>
+    </section>
+
+    <section id="contact">
+        <h1 class="h-primary center">Contact Us</h1>
+        <div id="contact-box">
+            <form action="">
+                <div id="form-group">
+                    <label for="name">Name: </label>
+                    <input type="text" name="name" id="name" placeholder="Enter Your Name">
+                </div>
+                <div id="form-group">
+                    <label for="email">Email: </label>
+                    <input type="email" name="name" id="email" placeholder="Enter Your Email">
+                </div>
+                <div id="form-group">
+                    <label for="phone">Phone: </label>
+                    <input type="number" name="name" id="phone" placeholder="Enter Your Phone Number">
+                </div>
+                <div id="form-group">
+                    <label for="message">Message: </label>
+                    <textarea name="message" id="message" cols="30" rows="5"></textarea>
+                </div>
+            </form>
+        </div>
+    </section>
+    <hr>
+    <footer>
+        <div class="center">
+            Copyright &copy DIT Electricity Department All rights reserved.
+        </div>
+    </footer>
+    <script>
+        function generatebill(){
+            var val;
+            val = document.getElementById("generate").value;
+            var ans;            
+            if(val<50){
+                ans = val*2.0;
+            }
+            else if(val>=50 && val<200){
+                ans =50*2.0 + (val-50)*2.50;
+            }
+            else if(val>=200 && val<400){
+                ans = 50*2.0  + 150 * 2.5 + (val-200)*3.0;
+            }
+            else if(val>=400 && val<500){
+                ans = 50*2.0 + 150 * 2.5 + 200*3.0 + (val-400)*3.5; 
+            }
+            else{
+                ans = 50 * 2.0 + 150 * 2.5 + 200 * 3.0 + 100 * 3.5 + (val-500)*4.0;
+            }
+            
+            if(val<=0)
+                alert("Not applicable value");
+            else{
+                document.getElementById("answer").innerHTML = "The total generated bill will be of &#8377 "+ans;
+            }
+        }
+    </script>
+</body>
+
+</html>
