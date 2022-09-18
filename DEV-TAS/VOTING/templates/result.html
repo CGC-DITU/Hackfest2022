@@ -1,0 +1,93 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result</title>
+</head>
+<body>
+    <nav class="bg-black p-2 text-white rounded-xl cursor">
+        <ul class="flex space-x-10 m-3">
+            <li><a href="/admin">Admin Login</a></li>
+            <li><a href="/cd">Candidate Login</a></li>
+            <li><a href="/res">Result</a></li>
+            <li><a href="/res">About US</a></li>
+            <li><a href="/res">Home</a></li>
+            <!-- <button class="border border-white p-1 rounded-lg mx-84">Search</button> -->
+            
+            
+            
+        </ul>
+    </nav>
+    <style>
+        #tech{
+    height: 300px;
+    border: 1PX solid;
+    width: 50%;
+    background-image: url({% static 'Vting.jpeg' %});
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+#tech1{
+    height: 300px;
+    border: 1PX solid;
+    width: 50%;
+    background-image: url({% static 'Vting.jpeg' %});
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+#tech2{
+    background-image: url({% static 'Vting.jpeg' %});
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 300px;
+    border: 1PX solid;
+    width: 50%;
+}
+#tech3{
+    background-image: url({% static 'Vting.jpeg' %});
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 300px;
+    border: 1PX solid;
+    width: 50%;
+}
+body{
+    background-color: rgb(120, 120, 238);
+}
+    </style>
+<center>
+    <div id="tech">
+        <h1>1. Aman</h1>
+        <p>Party Name : BJP</p>
+        <p>DOB : </p>
+        <p>Age : 25</p>
+
+    </div>
+    <div id="tech1">
+        <h1>2. RITIK</h1>
+        <p>Party Name : AAP</p>
+        <p> : </p>
+        <p>Age : 40</p>
+
+    </div>
+    <div id="tech2">
+        <h1>3. Rowsun</h1>
+        <p>Party Name : CON</p>
+        <p>DOB : </p>
+        <p>Age : 20</p>
+
+    </div>
+    <div id="tech3">
+        <h1>4. Rahul</h1>
+        <p>Party Name : BJP</p>
+        <p>DOB : </p>
+        <p>Age : 43</p>
+
+    </div>
+</center>
+</body>
+</html>
