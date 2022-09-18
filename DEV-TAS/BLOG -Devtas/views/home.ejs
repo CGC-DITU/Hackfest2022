@@ -1,0 +1,17 @@
+
+<%- include('header') -%>
+
+<h1>Home Page</h1>
+
+<p><%= getPara %></p>
+
+
+<% post.forEach((e)=>{ %>
+    <h2><%= e.titleText %></h2>
+    <p>
+        <%= e.postText.substring(0,100) + "..."%>
+        <a href="/post/<%= e.titleText %>">Read More</a>
+    </p>
+<% }) %>
+
+<%- include('footer') -%>
