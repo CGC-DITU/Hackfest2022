@@ -1,0 +1,71 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%=title%></title>
+    <script src="https://kit.fontawesome.com/7b2866e202.js" crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" href="/CSS/EmpStyle.css">
+</head>
+<body>
+    
+    <center>
+    <div id="head">
+        <h1 id="page-heading">
+            <i class="fa-sharp fa-solid fa-users"></i>
+            Employee Managment System
+        </h1>
+    </div>
+    </center>
+
+    <div id="list">
+        <ul>
+            <% for(let i of empId) {%>
+                <li class="emp1">
+
+                    <div class="detail">
+                        <p><%=i.name%></p>
+                        <p><%=i.age%></p>
+                        <p><%=i.ph%></p>
+                        <p><%=i.email%></p>
+                        <p><%=i.city%></p>
+                    </div>
+
+                    <div class="delete-btn">
+                        <a href="/delete/?id=<%= i.id %>">
+                            <i class="fa-solid fa-user-minus"></i>
+                        </a>
+                    </div>
+
+                </li>
+            
+            <% } %>
+    </ul>
+</div>
+
+    <div id="start">
+        <form id="emp-form" action="/enter-detail" method="POST">
+
+            <label for="name">Name :</label>
+            <input type="text" name="name" id="name1" placeholder="Enter your name" required>
+
+            <label for="age">Age :</label>
+            <input type="number" name="age" id="age" placeholder="Enter your age" required>
+            
+            <label for="Ph">Number :</label>
+            <input type="number" name="ph" id="ph" placeholder="Enter your number" required>
+
+            <label for="email">Email :</label>
+            <input type="email" name="email" id="email" placeholder="Enter your email" required>
+            
+            <label for="city">City :</label>
+            <input type="text" name="city" id="city" placeholder="Enter your city" required>
+            
+            <button id="btn" type="submit">Next</button>
+        </form>
+    </div>
+    
+    <script type="text/javascript" src="E:/hack/Emloyee Managment/index.js"></script>
+</body>
+</html>

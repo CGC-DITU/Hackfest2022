@@ -1,0 +1,212 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Resume</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.4/jspdf.min.js"></script>
+</head>
+<body>
+    <!-- Google font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400;1,700&display=swap" rel="stylesheet">
+
+
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <link rel="stylesheet" href="E:/hack/resume/finalResume.css">
+</body>
+    <main class="resume-contents">
+        <section class="left-section">
+            <div class="left-section-contents">
+                <div class="profile">
+                    <img class="profile-image" src="./img/user-image.jpg" alt="profile Pic">
+                    <p class="name">CodeDevs</p>
+                    <p class="profession">Software Developer</p>
+                </div>
+
+                <div class="contact-info">
+                    <p class="left-title">Contact Info</p>
+                    <ul>
+                        <li><i class="fa fa-phone"></i>+91 7228044526
+                        </li>
+                        <li><i class="fa fa-envelope"></i>codedevs@gmail.com
+                        </li>
+                        <li><i class="fa fa-linkedin"></i>codedevs.com
+                        </li>
+                        <li><i class="fa fa-github"></i>codedevs3.github.com
+                        </li>
+                        <li><i class="fa fa-map-marker"></i>Boys Hostel, DIT University, Dehradun
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="skills">
+                    <p class="left-title">Skills</p>
+                    <ul>
+                        <li><p>python & java</p></li>
+                        <li><p>adv C++ & DSA</p></li>
+                        <li><p>HTML & CSS</p></li>
+                        <li><p>Nodejs & MongoDB</p></li>
+                        <li><p>Reactjs</p></li>
+                    </ul>
+                </div>
+
+                <div class="references">
+                    <p class="left-title">References</p>
+                    <div class="refer">
+                        <p class="referance-name">CDC</p>
+                        <p class="referance-profession">dit univeristy club</p>
+                        <ul>
+                            <li>
+                                <i class="fa fa-phone"></i>
+                                +91 9942823549
+                            </li>
+                            <li>
+                                <i class="fa fa-envelope"></i>
+                                cdc@gmail.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="right-section">
+            <div class="right-section-content">
+
+                <section class="about gap">
+                    <div class="right-title">About Me</div>
+                    <p class="about-me-contents">
+                        I'm Code Devs Looking to obtain the position
+                        of Software Developer in a
+                        fast-paced tech environment
+                        to utilize well-honed skills in
+                        computer science and gain
+                        extensive experience in
+                        developing customized
+                        software based on varying
+                        client demands as well as
+                        deployment and support
+                        using agile development
+                        methodologies.
+
+                        <br><br>An enthusiastic fresher with full
+                        determination and hardworking abilities,
+                        looking for a start in a software development
+                        corporation. Applying for the job to
+                        accelerate my career in the corporate world.
+                    </p>
+                </section>
+
+                <section class="experience gap">
+                    <div class="right-title">Experience</div>
+                    <div class="experience-contents">
+                        <div class="exp-left">
+                            <p class="exp-company-name">XYZ Pvt.ltd</p>
+                            <p class="exp-time-period">2020-2022</p>
+                        </div>
+                        <div class="exp-right">
+                            <p class="exp-position">Developer</p>
+                            <p class="exp-desc">
+                                 I was a junior web site developer at XYZ Pvt.ltd, Dehradun.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="experience-contents">
+                        <div class="exp-left">
+                            <p class="exp-company-name">ABC Tech</p>
+                            <p class="exp-time-period">2022- still going on</p>
+                        </div>
+                        <div class="exp-right">
+                            <p class="exp-position">Developer</p>
+                            <p class="exp-desc">
+                                 I am working as a senior web site developer at ABC Tech, Dehradun.
+                            </p>
+                        </div>
+                    </div>
+
+                </section>
+
+                <section class="education gap">
+                    <div class="right-title">Education</div>
+                    <div class="education-content">
+                        <div class="education-left">
+                            <p class="education-school-name">DIT University</p>
+                            <p class="education-time-period">2020-2024</p>
+                        </div>
+                        <div class="education-right">
+                            <p class="education-subject">Computer Science</p>
+                            <p class="education-desc">
+                                Hey, so i pursued my Btech CSE from DIT Univeristy, Dehradun
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="education-content">
+                        <div class="education-left">
+                            <p class="education-school-name">Kendriya Vidhyalaya</p>
+                            <p class="education-time-period">2018-2020</p>
+                        </div>
+                        <div class="education-right">
+                            <p class="education-subject">12th class</p>
+                            <p class="education-desc">
+                                Hey, so i pursued PCB in my Higher secondary, from kendriya vidhyalay,bengal
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="education-content">
+                        <div class="education-left">
+                            <p class="education-school-name">Kendriya Vidhyalaya</p>
+                            <p class="education-time-period">2006-2018</p>
+                        </div>
+                        <div class="education-right">
+                            <p class="education-subject">10th class</p>
+                            <p class="education-desc">
+                                Hey, so i pursued my secondary from kendriya vidhyalay,bengal
+                            </p>
+                        </div>
+                    </div>
+
+                </section>
+
+
+            </div>
+        </section>
+
+
+            </div>
+        </section>
+
+        <center>
+            <p>
+              <button id="generatePDF">generate PDF</button>
+            </p>
+          </center>
+        </main>
+    </body>
+
+    <script>
+        var doc = new jsPDF();
+var specialElementHandlers = {
+    '#editor': function (element, renderer) {
+        return true;
+    }
+};
+
+//margins.left, // x coord   margins.top, { // y coord
+$('#generatePDF').click(function () {
+    doc.fromHTML($('#htmlContent').html(), 15, 15, {
+        'width': 700,
+        'elementHandlers': specialElementHandlers
+    });
+    doc.save('sample_file.pdf');
+});
+    </script>
+
+</html>

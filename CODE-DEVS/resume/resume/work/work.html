@@ -1,0 +1,47 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="E:/hack/resume/styleForm.css">
+</head>
+<body>
+    
+    <div class="login-page">
+        <div class="form">
+            <div class="login">
+                <div class="login-header">
+                    <h3>Work experience</h3>
+                    <p>Please enter your Work experience</p>
+                </div>
+            </div>
+            
+            <form action="/" method="post" class="login-form">
+                <label for="company">Company :  </label>
+                <input type="text" name="company" id="company" required><br><br>
+
+                <label for="date1">Start : </label>
+                <input type="date" name="date1" id="date1" required><br><br>
+
+                <label for="date2">End : </label>
+                <input type="date" name="date2" id="date2" required><br><br>
+
+                <label for="post">Post : </label>
+                <input type="text" name="post" id="post" required><br><br>
+                
+                <button onclick="addNewwork()" style="width: 100%;">ADD</button><br><br><hr>
+
+                <div class="login-btn">
+                    <button type="submit" onclick="window.location.href = 'E:/hack/resume/finalResume.html' ;" style="width: 50%">Next</button>
+                    <br><br>
+                    <button type="reset" style="width: 50%;">reset</button>
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+
+</body>
+</html>
