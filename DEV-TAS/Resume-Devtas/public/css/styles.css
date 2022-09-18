@@ -1,0 +1,141 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Slab', serif;
+    box-sizing: border-box;
+    background-image: url('/kelly-sikkema-tQQ4BwN_UFs-unsplash.jpg');
+}
+
+.NavbarPage1{
+    background-color: rgb(89, 86, 86);
+    height: 60px;
+    display: flex;
+    justify-content: center;
+}
+
+.insideNav{
+    display: flex;
+    flex-direction: row;
+}
+
+.HeadingNav{
+    font-size: xx-large;
+}
+
+.HeadingNav2{
+    font-size: small;
+    padding: 20px 0 0 0;
+    color: gray;
+    
+}
+
+.aboutus{
+    padding: 20px 0 0 500px;
+    transform: translateX(150px);
+}
+
+.aboutus a{
+    color: black;
+    text-decoration: none;
+}
+
+.MainHead{
+    display: flex;
+    padding: 10px 0 0 0;
+    transform: translateX(180px);
+}
+
+.getstarted a{
+    color: black;
+    font-size: xx-large;
+    text-decoration: none;
+}
+
+.Next button{
+    background-color: transparent;
+    border-radius: 19px;
+}
+
+.Next button:hover{
+    background-color: rgba(0, 0, 0, 0.142);
+    transition: 200ms ease-in;
+    transform: translateY(3px) translateX(2px);
+}
+
+.getstarted{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 300px 0 0 0;
+}
+
+.FORM{
+    margin: 0 auto;
+    border: 2px solid black;
+    width: 60%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(40, 40, 40, 0.74) ,rgba(97, 93, 93, 0.381)) ;
+    padding-top: 20px;
+}
+
+.inputs input,textarea{
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    margin: 10px auto;
+    padding: 10px;
+    border-radius: 19px;
+    border: 1px solid transparent;
+}
+
+.FORM label{
+    color: cornsilk;
+    font-size: larger;
+}
+
+.FORM .btn{
+    background-color: rgb(1, 169, 34);
+    margin: 0 440px;
+    padding: 15px 25px;
+    border-radius: 15px;
+    border: 1px solid transparent;
+    font-weight: 700;
+}
+.btn:hover{
+    background-color: chartreuse;
+    transition:200ms ease-in;
+    transform: translateX(3px) translateY(3px);
+}
+
+.Final{
+    text-align: center;
+    margin: 0 auto;
+    background-color: white;
+    width: 900px;
+    height: 110vh;
+}
+
+.Final p{
+    text-align: left;
+    margin: 0 20px;
+}
+
+.Final h1{
+    text-decoration: underline;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.FinalName{
+    color: rgb(56, 56, 56);
+}
+
+.FinalName P{
+    font-size: larger;
+    padding: 10px 0;
+}
+
+.FinalName .Name1{
+font-size: 70px;
+
+}

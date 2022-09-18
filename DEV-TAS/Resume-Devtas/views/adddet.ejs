@@ -1,0 +1,36 @@
+<%- include('header') -%>
+
+<form action="/Final" method="post" class="FORM">
+  <div class="inputs">
+    <label for="inpName">Enter Your Name -</label>
+    <input type="text" name="Name" id="inpName" placeholder="Name" required/>
+  </div>
+  <div class="inputs">
+    <label for="inpEmail">Enter Your Email - </label>
+    <input type="email" name="Email" id="inpEmail" placeholder="Email" required/>
+  </div>
+  <div class="inputs">
+    <label for="inpNum">Enter Your Phone Number - </label>
+    <input type="number" name="number" id="inpNum" placeholder="Number"/>
+  </div>
+  <div class="inputs">
+    <label for="inpQual">Add Qualifications - </label>
+    <input type="text" name="qulification" id="inpQual" placeholder="Qualification(Degree)"/>
+  </div>
+  <div class="inputs">
+    <label for="inpTech">Add Technologies You know/Skills - </label>
+    <input type="text" name="techs" id="inpTech" placeholder="Technologies"/>
+  </div>
+  <div class="inputs">
+    <label for="inpTech">Past Experiences - </label>
+    <input type="text" name="exp" id="inpTech" placeholder="Technologies"/>
+  </div>
+  <div class="inputs">
+    <label for="inptextAr">Tell About Yourself - </label>
+    <textarea name="textarea" id="inptextAr" cols="60" rows="10"></textarea>
+  </div>
+  <button class="btn">Submit</button>
+
+</form>
+
+<%- include('footer') -%>
