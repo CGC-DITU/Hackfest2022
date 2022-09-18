@@ -1,0 +1,19 @@
+<%- include('header') -%>
+
+<div class="box">
+    <h1>Employee List</h1>
+</div>
+
+<% getData.forEach((e)=>{ %>
+    <h2><%= e.titleText %></h2>
+    <p>
+        <%= e._id %> --- <%= e.Name %> 
+    </p>
+<% }) %>
+
+
+<form action="/">
+    <button>Go to Home</button>
+</form>
+
+<%- include('footer') -%>
