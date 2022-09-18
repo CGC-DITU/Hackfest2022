@@ -1,0 +1,74 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
+        <script defer src="https://pyscript.net/latest/pyscript.js"></script>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <title>Document</title>
+    </head>
+    <body class="text-xl">
+        <py-script>
+            print("Hello World")
+            from js import document, alert
+            from pyodide import create_proxy
+            import random
+            level = 55 
+            def sudoku(diff=level):
+            
+                numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+                
+                grid = [[0 for x in range(9)] for y in range(9)]
+                
+                for i in range(diff):
+                    row = random.randint(0, 8)
+                    col = random.randint(0, 8)
+                    num = random.choice(numbers)
+                    while not checkGrid(grid, row, col, num) or grid[row][col] != 0:
+                        row = random.randint(0, 8)
+                        col = random.randint(0, 8)
+                        num = random.choice(numbers)
+                    grid[row][col] = num
+                        
+            
+            
+                return (grid)
+            
+            def printGrid(grid):
+                print("+-------+-------+-------+")
+                for i in range(9):
+                    print("|", end=" ")
+                    for j in range(9):
+                        print(grid[i][j], end=" ")
+                        if j % 3 == 2:
+                            print("|", end=" ")
+                    print()
+                    if i % 3 == 2:
+                        print("+-------+-------+-------+")
+            
+            def checkGrid(grid,row,col,num):
+                for i in range(9):
+                    valid = True
+                    for i in range(9):
+                        if grid[row][i] == num:
+                            valid = False
+                            break
+                    for i in range(9):
+                        if grid[i][col] == num:
+                            valid = False
+                            break
+                    rowselection = row // 3
+                    colselection = col // 3
+                    for i in range(3):
+                        for j in range(3):
+                            if grid[rowselection * 3 + i][colselection * 3 + j] == num:
+                                valid = False
+                                break
+                return valid
+            sudoku()
+        </py-script>
+        <div class="grid grid-col-9"></div>
+    </body>
+    </html>
