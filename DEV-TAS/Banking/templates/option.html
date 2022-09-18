@@ -1,0 +1,53 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>option</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <style>
+        body{
+            background-image: url({% static 'bank.jpg' %});
+            background-image: no-repeat;
+            background-size: 100%;
+        }    
+    </style>
+    <nav class="bg-black p-2 text-white  cursor flex ">
+        <ul class="flex space-x-10 m-3 ">
+            <li><a href="/" >Home</a></li>
+        <li><a href="/log/" >Login</a></li>
+        <li><a href="/ab" >About</a></li>
+        <li><a href="/con">Contact Us</a></li>  
+        </ul>
+        
+    </nav>
+    <div class="cl p-40  m-10 ">
+        <p class="text-white text-3xl mt-2">Available Banking Options</p>
+    <div class="cont ">
+        <div class="info mt-10 border border-black w-64 ">
+            <div class="items-center">
+                 <div class="right flex flex-col bg-white pt-2 pl-2 pb-4 rounded-lg relative ">
+                    <form action="/bal/">
+                        <a href="/all/">
+                    <input class="w-60 h-14 border border-black rounded-md hover:border-blue-500 active:border-blue-500 mt-2"
+                    type="button" href='/bal/' value="Display Account"></a></form></form>
+                <form action="/wid/">
+                    <a href="/wid/">
+                <input class="w-60 h-14 border border-black rounded-md hover:border-blue-500 active:border-blue-500 mt-2"
+                type="button" href='/wid/' value="Withdraw"></a></form>
+                <form action="/dp/">
+                    <a href="/dp/">
+                <input class="w-60 h-14 border border-black rounded-md hover:border-blue-500 active:border-blue-500 mt-2"
+                type="button" href='/dp/' value="Deposits"></a></form>
+                
+            
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
