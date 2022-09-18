@@ -1,0 +1,99 @@
+*{
+    font-family: "Lato";
+    color: white;
+  }
+  body{
+    background-color: #33cfff;
+    text-align: center;
+    
+    padding: 0;
+    margin: 0;
+  }
+  
+  .table{
+    display: table;
+    margin: 0 auto;
+  }
+  .tr{
+    display: table-row;
+    cursor: pointer;
+    
+    transition: all 300ms;
+  }
+  .td{
+    display: table-cell;
+    font-size: 30px;
+    
+    padding: 7px 0;
+    
+    text-align: left;
+  }
+  .td.check{
+    padding-right: 20px;
+  }
+  .tr:hover{
+    transform: scale(1.05);
+  }
+  
+  button{
+    background-color: white;
+    color: #33cfff;
+    border: 4px solid white;
+    border-radius: 1000px;
+    
+    font-size: 30px;
+    padding: 10px 30px;
+    margin-top: 10px;
+    
+    cursor: pointer;
+    
+    transition: all 300ms, transform 100ms;
+    
+    opacity: 0;
+  }
+  button > * {
+    color: #33cfff;
+    transition: all 300ms;
+  }
+  button:not(.loading):hover > *{
+    color: white;
+  }
+  button i{
+    display: none !important;
+  }
+  button.loading{
+    background-color: transparent;
+  }
+  button.loading i{
+    display: inline-block !important;
+    color: white;
+  }
+  button.loading .text{
+    display: none;
+  }
+  button:not(.loading):hover{
+    background-color: transparent;
+    color: white;
+  }
+  button:active{
+    outline: 0;
+    transform: translateY(3px);
+  }
+  button:focus{
+    outline: 0; 
+  }
+  
+  button.shown{
+    opacity: 1;
+  }
+  
+  .tr.active{
+    font-weight: bold;
+    transform: scale(1.1);
+  }
+  .tr.active i::before{
+    content: "\f14a";
+  }
+  .tr.active i{
+    font-weight: 700;
+  }
