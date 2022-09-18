@@ -1,0 +1,54 @@
+<%- include('header') -%>
+<div class="book">
+    <h1>Fill Details</h1>
+  </div>
+  
+<div class="bookTickets">
+  <form action="/success" method="post">
+    <div class="bookinp">
+      <label for="name">Enter Name</label>
+      <input type="text" name="name" id="name" required/>
+    </div>
+    <div class="bookinp">
+      <label for="mail">Enter Email</label>
+      <input type="email" name="email" id="mail" required/>
+    </div>
+    <div class="bookinp">
+      <label for="number">Mobile Number</label>
+      <input type="number" name="number" id="number" required/>
+    </div>
+    <div class="bookinp">
+      <label for="number">Total seats</label>
+      <input type="number" name="totSeat" id="number" required/>
+    </div>
+    <div class="bookinp">
+      <label for="seat">Seat</label>
+      <select name="seat" id="time" required>
+        <option value="250">Front Row &#8594 Rs. 250</option>
+        <option value="320">Middle Row &#8594 Rs. 320</option>
+        <option value="500">Lasr Row &#8594 Rs. 500</option>
+      </select>
+    </div>
+    <div class="bookinp">
+      <label for="time">Select Hall</label>
+      <select name="time" id="time" required>
+        <option value="null">---</option>
+        <option value="Hall 1 Brahmastra (9:00)">Hall 1 &#8594 9:00 - 11:00 &#8594 Brahmastra</option>
+        <option value="Hall 1 Cuttputli (11:30)">Hall 1 &#8594 11:30 - 14:00 &#8594 Cuttputli</option>
+        <option value="Hall 1 Thor - Love and Thunder (15:00)">Hall 1 &#8594 15:00 - 17:50 &#8594 Thor - Love and Thunder</option>
+        <option value="Hall 1 Brahmastra (19:00)">Hall 1 &#8594 19:00 - 21:50 &#8594 Brahmastra</option>
+        <option value="Hall 2 Brahmastra (11:30)">Hall 2 &#8594 11:30 - 14:00 &#8594 Brahmastra</option>
+        <option value="Hall 2 Cuttputli (15:00)">Hall 2 &#8594 15:00 - 17:50 &#8594 Cuttputli</option>
+        <option value="Hall 2 Thor - Love and Thunder (9:00)">Hall 2 &#8594 9:00 - 11:00 &#8594 Thor - Love and Thunder</option>
+        <option value="Hall 1 Brahmastra (19:00)">Hall 1 &#8594 19:00 - 21:50 &#8594 Brahmastra</option>
+        <option value="Hall 3 Brahmastra (15:00)">Hall 3 &#8594 15:00 - 17:50 &#8594 Brahmastra</option>
+        <option value="Hall 3 Cuttputli (9:00)">Hall 3 &#8594 9:00 - 11:00 &#8594 Cuttputli</option>
+        <option value="Hall 3 Thor - Love and Thunder (11:30)">Hall 3 &#8594 11:30 - 14:00 &#8594 Thor - Love and Thunder</option>
+        <option value="Hall 3 Cuttputli (19:00)">Hall 3 &#8594 19:00 - 121:00 &#8594 Cuttputli</option>
+      </select>
+    </div>
+    <button>Book</button>
+  </form>
+</div>
+
+<%- include('footer') -%>

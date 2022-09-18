@@ -1,0 +1,187 @@
+body{
+    background-image: url('/felix-mooneeram-evlkOfkQ5rE-unsplash.jpg');
+    background-size: 100%;
+}
+
+.landing{
+    color: wheat;
+    display: flex;
+    justify-content: center;
+    font-size: xx-large;
+}
+
+.landingForm{
+    display: flex;
+    justify-content: center;
+}
+
+.landingForm button{
+    padding: 10px 20px;
+    border-radius: 18px;
+    background-color: black;
+    color: wheat;
+    font-weight: 600;
+    border: 1px solid wheat;
+}
+
+.landingForm button:hover{
+    transition: 400ms ease-in;
+    background-color: rgba(245, 222, 179, 0.233);
+    transform: translateY(3px) translateX(2px);
+    border: 1px solid transparent;
+}
+
+.nextHead{
+    color:wheat;
+}
+
+.nextForm{
+    color: wheat;
+    padding: 0 0 0 650px;
+}
+.nextForm input{
+    border-radius: 18px;
+    border: 1px solid transparent;
+}
+
+.nextForm button{
+    
+    background-color: black;
+    color: wheat;
+    border:1px solid wheat;
+    padding: 4px 8px;
+    border-radius: 18px;
+}
+
+.nextForm button:hover{
+    transition: 300ms ease-in;
+    background-color: rgba(245, 222, 179, 0.35);
+    transform: translateX(3px) translateY(2px);
+}
+
+.nextDiv{
+    display: flex;
+    justify-content: center;
+    padding: 100px 0;
+}
+
+.chosenth{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-around;
+}
+
+.chosenth button{
+    padding: 10px 40px;
+    border-radius: 19px;
+    background-color: black;
+    color: wheat;
+    font-weight: 800;
+    border: 1px solid wheat;
+}
+.chosenth button:hover{
+    transition: 300ms ease-in;
+    background-color: rgba(245, 222, 179, 0.35);
+    transform: translateX(3px) translateY(2px);
+}
+
+.Pvr{
+    color: wheat;
+    font-size: x-large;
+    display: flex;
+    justify-content: center;
+    padding: 100px 0;
+}
+
+.PvrBooks{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.PvrBooks button{
+    padding: 10px 40px;
+    border-radius: 19px;
+    background-color: black;
+    color: wheat;
+    font-weight: 800;
+    border: 1px solid wheat;
+}
+
+.PvrBooks button:hover{
+    transition: 300ms ease-in;
+    background-color: rgba(245, 222, 179, 0.35);
+    transform: translateX(3px) translateY(2px);
+}
+
+.ShowTimes{
+    color: wheat;
+    font-size: larger;
+    padding: 0 0 0 600px;
+    transform: translateY(-70px);
+}
+
+.bookTickets{
+    border: 1px solid wheat;
+    color: wheat;
+    width: 40%;
+    padding: 15px 30px;
+    border-radius: 18px;
+    display: flex;
+    justify-content: center;
+    transform: translateX(500px) translateY(150px);
+    background-color: rgba(0, 0, 0, 0.418);
+}
+
+.bookTickets input{
+    display: flex;
+    flex-direction: row;
+    padding:5px 10px;
+    margin: 10px 0;
+    width: 100%;
+    border-radius: 18px;
+    border: 1px solid transparent;
+}
+
+#time{
+    display: flex;
+    padding: 5px 10px;
+    border-radius: 18px;
+    margin: 10px 0;
+}
+
+.bookTickets button{
+    padding: 10px 40px;
+    margin-top: 4px;
+    border-radius: 19px;
+    background-color: black;
+    color: wheat;
+    font-weight: 800;
+    border: 1px solid wheat;
+}
+
+.bookTickets button:hover{
+    transition: 300ms ease-in;
+    background-color: rgba(245, 222, 179, 0.35);
+    transform: translateX(3px) translateY(2px);
+}
+
+.success{
+    color: wheat;
+    font-size: x-large;
+    display: flex;
+    justify-content: center;
+    padding: 100px 0;
+}
+
+.showTicket{
+    color: wheat;
+}
+
+.book{
+    color: wheat;
+    font-size: x-large;
+    display: flex;
+    justify-content: center;
+}
