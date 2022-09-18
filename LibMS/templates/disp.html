@@ -1,0 +1,64 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <nav class="bg-black p-2 text-white rounded-xl cursor">
+        <ul class="flex space-x-10 m-3">
+            <li><a href="/br/">Book Reissue</a></li>
+            <li><a href="/bret/">Book Return</a></li>
+            <li><a href="/bal/">Check Balance</a></li>
+            <li><a href="/aboutus">About us</a></li>
+            <li><a href="/">Home</a></li>
+            <!-- <button class="border border-white p-1 rounded-lg mx-84">Search</button> -->
+            
+            
+            
+        </ul>
+    </nav>
+    <style>
+      body {
+        background-image: url("{% static 'linb.png' %}");
+        background-size: 100%;
+        color: black;
+      }
+      .midLvl {
+        
+        border: 2px solid rgba(255, 255, 255, 0.523);
+        width: 400px;
+        height: 15vh;
+        background-color: white;
+        border-radius: 18px;
+        padding: 10px 10px;
+        transform: translateX(690px);
+      }
+      .Toplvl {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 200px 0;
+      }
+
+     
+    </style>
+    <div class="Toplvl">
+      <div class="midLvl">
+        <div>
+            <strong>
+          <h1>Name of the student:  {{name}}</h1>
+          <br>
+          <h1> Total Balance amount:   {{balance}}</h1>
+        </strong>
+          
+        </div>
+    </div>
+    
+    </div>
+  </body>
+</html>
